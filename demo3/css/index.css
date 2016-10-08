@@ -1,0 +1,86 @@
+.fr-con .title p{
+	font-size: 25px;
+	padding:3px;
+	float: left;
+	}
+	
+	.fr-con table{
+		clear: both;
+		width: 805px;
+		margin: 30px auto 50px;
+		text-align: left;
+		border-collapse:collapse;
+	}
+	.fr-con table tr:first-child td{
+		margin-top: 30px;
+		border-top:2px solid #ccc;
+	}
+	.fr-con table tr td{
+		border-bottom:2px solid #ccc;
+		padding-top: 10px;
+	}
+	.fr-con tr img{
+		width: 150px;
+		height: 100px;
+	}
+	.fr-con table li{
+		font-size: 16px;
+		padding-bottom: 10px;
+	}
+	.fr-con table .text-top{
+		font-size: 14px;
+		text-align: right;
+		vertical-align: text-top;
+		color: #999;
+	}
+
+
+
+/*分页插件css样式*/
+/*.tcdPageCode{
+	padding:0 0 0 30%;
+	text-align: left;
+	color:#428bca;
+	margin-bottom: 50px;
+	}
+	.tcdPageCode a{
+		display: inline-block;
+		height: 25px;
+		line-height: 25px;
+		color:#428bca;
+		border:1px solid #ddd;
+		border-radius: 4px;
+		vertical-align: middle;
+		padding:0 10px;
+		margin: 0 2px;
+	}
+	.tcdPageCode a:hover{
+		text-decoration: none;
+		border:1px solid #428bca;
+	}
+	.tcdPageCode span.current{
+		display: inline-block;
+		height: 25px;
+		line-height: 25px;
+		color: #fff;
+		background: #428bca;
+		border:1px solid #428bca;
+		vertical-align: middle;
+		border-radius: 4px;
+		padding: 0 10px;
+		margin:0 2px;
+	}
+	.tcdPageCode span.disadled{
+		display: inline-block;
+		height: 25px;
+		line-height: 25px;
+		padding: 0 10px;
+		margin:0 2px;
+		color:#fff;
+		background: #bfbfbf;
+		border:1px solid #bfbfbf;
+		border-radius: 4px;
+		vertical-align: middle;
+	}
+
+*/

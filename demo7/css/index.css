@@ -1,0 +1,32 @@
+.fr-con .title p{
+	font-size: 25px;
+	padding:3px;
+	float: left;
+	}
+	.fr-con .news-con{
+		clear: both;
+		width: 805px;
+		margin: 35px auto 0;
+		text-align: left;
+	}
+	.fr-con .news-con h3{
+		text-align: center;
+		margin-bottom:30px;
+		font-size: 25px;
+		font-weight: 400;
+	}
+	.fr-con .news-con p{
+		font-size: 18px;
+		text-indent: 30px;
+		line-height: 35px;
+		margin-top: 10px;
+	}
+	.fr-con .news-con .prev{margin-top: 50px;}
+	.fr-con .news-con .prev a,
+	.fr-con .news-con .next a{
+		color:#222;
+	}
+	.fr-con .news-con .prev a:hover,
+	.fr-con .news-con .next a:hover{
+		color:blue;
+	}

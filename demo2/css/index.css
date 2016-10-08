@@ -1,0 +1,29 @@
+.content{
+	clear: both;
+	width: 805px;
+	margin: 36px auto;
+	}
+	.content-fl{
+		float: left;
+	}
+	.content-fl img{
+		width:250px;
+		height:350px;
+	}
+	.content-fr{
+		width: 540px;
+		float: right;
+		/*height: auto;*/
+		/*padding-bottom:100px;*/
+		}
+		.fr-con .content-fr p{
+			font-size: 16px;
+			padding-top: 6px;
+			text-indent: 26px;
+			line-height: 26px;
+		}
+		.fr-con .content-fr p:first-child{
+			font-size: 23px;
+			padding:3px;
+			text-indent: 10px;
+		}

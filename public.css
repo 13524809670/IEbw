@@ -1,0 +1,302 @@
+/*公共样式*/
+*{
+	margin:0;
+	padding:0;
+	}
+	html,body{
+		width: 100%;
+		height:100%;
+		font-family:"Microsoft Yahei";
+	}
+	body{ 
+		word-wrap:break-word;
+		word-break:break-all; 
+		position: relative;
+	}
+	html { 
+		overflow-x: hidden; 
+		overflow-y: auto; 
+	}
+	ul{list-style:none;}
+
+	li{list-style: none;}
+
+	a{text-decoration: none;}
+
+	a:focus{outline: none;}
+
+	img{border:0;}
+	input,button{
+		outline: none;
+		cursor:pointer;
+	}
+
+.main{
+	width: 1920px;
+	margin: 0 auto;
+	height: auto;
+	border:1px solid #e0e0e0;
+	position: absolute;
+	top: 0;
+	left:50%;
+	margin-left: -960px;
+	/*box-shadow: 1px 1px 1px #999;
+	box-shadow: -1px -1px -1px #999;*/
+	}
+
+/*顶部部样式*/
+	.top-wrap{
+		width: 100%;
+	}
+	.top-con{
+		width: 1200px;
+		margin:10px auto;
+		height: 80px;
+	}
+	.top-con img{
+		width:65px;
+		height: 80px;
+		float: left;
+		margin-right: 47%;
+		vertical-align: middle;
+	}
+	.top-con .search{
+		width: 332px;
+		height: 40px;
+		line-height: 35px;
+		float:right;
+		margin:20px 0 20px 0;
+		border:1px solid #999;
+	}
+	.top-con input{
+		width: 260px;
+		vertical-align: middle;
+		margin: 0 auto;
+		border:none;
+		padding-left:5px;
+		font-size: 20px;
+	}
+	.top-con button{
+		width: 60px;
+		height: 100%;
+		background: rgb(12, 133, 218);
+		border:none;
+		vertical-align: top;
+		float: right;
+	}
+	.top-con button img{
+		width: 38px;
+		height: 33px;
+		margin:1px 6px 0 11px;
+	}
+
+/*头部导航栏样式*/
+	.head-nav{
+		clear: both;
+		height: 50px;
+		background:rgb(6, 72, 118);
+	}
+	.head-nav ul{
+		width: 1200px;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.head-nav li{
+		float: left;
+		width: 19.9%;
+		height: 50px;
+		line-height: 50px;
+		margin-right: 1px;
+	}
+	.head-nav a {
+		display: block;
+		font-weight: 500;	
+		color: #d0d0d0;
+		font-size: 25px;
+	}
+	.head-nav li:hover a{
+		background: rgb(255, 214, 153);
+		color:#222;
+	}
+	.head-nav .on{
+		background: rgb(255, 214, 153);
+	}
+	.head-nav .on a{color: #222;}
+
+/*banner 样式*/
+	.banner,.banner img{
+	clear: both;
+	width:1920px;
+	height: 600px;
+	}
+	.banner{
+		position: absolute;
+		left:50%;
+		top:150px;
+		margin-left: -960px;
+	}
+
+/*content 样式*/
+	.mainbody{
+	width: 1200px;
+	margin:650px auto 0;
+	height: auto;
+	}
+
+/*mainbody 头部导航 样式*/
+	.header-nav ul{
+	width: 1200px;
+	height: 45px;
+	line-height: 45px;
+	background: rgb(208,208,208);
+	}
+	.header-nav li{
+		float: left;
+	}
+	.header-nav .nav-first,.header-nav li a{
+		color:#666;
+		font-size: 20px;
+		padding: 0 5px;
+	}
+	.header-nav li .nav-last{color: blue;}
+	.header-nav .nav-first {padding-left:45px;}
+
+/*main-con 样式*/
+	.main-con{
+		width: 100%;
+		margin-top: 30px;
+		}
+
+	/*左边导航样式*/
+		.fl-nav{
+			float: left;
+			margin-left: 5px;
+		}
+		.fl-nav a{
+			color:#333;
+		}
+		.fl-nav li{
+			width: 260px;
+			height: 50px;
+			text-align: center;
+			line-height: 50px;
+			border-bottom: 1px solid #999;
+			margin-bottom: 1px;
+			background: rgb(208,208,208);
+		}
+		.fl-nav .icon-a:hover{
+			background: rgb(238, 219, 93);
+		}
+		.fl-nav li:first-child{
+			background:rgb(6, 72, 118);
+			font-size: 25px;
+			color: #fff;
+		}
+		.fl-nav li:first-child a{
+			color:#fff;
+			vertical-align: middle;
+		}
+		.fl-nav li:first-child img{
+			vertical-align: middle;
+		}
+		.fl-nav .last-child{
+			background: rgb(11, 200, 100);
+		}
+		.fl-nav .icon-a,.fl-nav .last-child{
+			font-size: 21px;
+		}
+	/*三角图标样式*/
+		.fl-nav span{
+			display: inline-block;width:0;
+			border-top:8px solid transparent;
+			border-bottom: 8px solid transparent;
+			border-left: 8px solid #222;
+			border-right: 8px solid transparent;
+			margin-right: 10px;
+		}
+		.fl-nav .font-icon{
+			border-left: 8px solid #fff;
+		}
+	/*鼠标经过是图标的样式*/
+		.fl-nav li:hover span{
+			border-left-color: #fff;
+		}
+
+	/*右边 content 样式*/
+		.fr-con-wrap{
+			float: right;
+			margin:0 auto 120px;
+		}
+		.fr-con{
+			width: 900px;
+			border: 2px solid #ccc;
+		}
+		.fr-con .title{
+			width: 100%;
+			height: 50px;
+		}
+		/*图片样式*/
+		.fr-con .title img{
+			float: left;
+			padding:10px 8px 0 5px;
+			width:35px;
+			height:36px;
+			display: inline-block;
+		}
+		.fr-con h2{
+			font-size: 25px;
+			font-weight: 500;
+			padding:6px 0 6px 0;
+		}
+		.fr-con .title .icon{
+			background-image: url(images/pic_19.png);
+			background-repeat: no-repeat;
+			width:800px;
+			height: 10px;
+			float: left;
+			display: block;
+		}
+		.fr-con h3{
+			font-weight: 400;
+			font-size: 20px;
+		}
+
+/*底部样式*/
+	.footer{
+		clear:both;
+		height: 80px;
+		background:#000;
+	}
+	.footer-box{
+		width: 1200px;
+		height: 100%;
+		margin: 0 auto;
+	}
+	.footer span{
+		color:#d8d8d8;
+		font-size:14px;
+		line-height: 80px;
+	}
+	.footer-box .last-span{
+		float: right;
+	}
+
+/*清除浮动样式*/
+	.clear{clear: both;}
+	.clear1{padding-bottom: 50px;}
+
+
+
+/*div清除浮动 加空标签  清除可占位 自动挣开高度*/
+/*.clear{clear: both;}*/
+
+
+/*ul清除浮动 用伪类清除浮动 : content"" ,display:block,clear:both*/
+/*.clear{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+<input maxlength="10" placeholder="" />
+/*maxlength 输入字数*/
