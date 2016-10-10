@@ -3,16 +3,17 @@ h2{
 	font-size: 36px;
 	letter-spacing: 10px;
 }
-h4{
+.company-con .title span,
+.banner-two .title span,
+.news .title span{
 	font-size: 16px;
 	margin-bottom: 15px;
-	padding-top: 60px;
 }
 
 .icon1{
 	width: 60px;
-	height: 40px;
-	margin:20px auto 50px auto;
+	height: 35px;
+	margin:20px auto 50px;
 	display: block;
 	}
 .company-con .title,
@@ -22,14 +23,13 @@ h4{
 }
 .company-con{
 	width: 100%;
-	margin-top: -50px;
 	}
 	.wrap{
 		width: 1200px;
 		margin:0 auto;
 	}
 	.wrap .title{
-		margin-bottom: 80px;
+		margin-top: 60px;
 	}
 
 	.wrap .left-con{
@@ -64,8 +64,8 @@ h4{
 	}
 
 .banner-two{
-	clear: both;
 	width: 100%;
+	margin-top: 50px;
 	}
 	.banner-box{
 		background: rgb(0,0,0);
@@ -74,6 +74,7 @@ h4{
 
 .news{
 	width: 100%;
+	margin-top: 50px;
 	}
 	.news-wrap{
 		background: #ccc;

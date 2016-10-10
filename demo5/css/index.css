@@ -8,6 +8,8 @@
 .fr-con-wrap{
 	margin:0 auto 150px;
 }
+
+
 .fr-con .form{
 	width: 815px;
 	font-size: 18px;
@@ -23,35 +25,27 @@
 		height: auto;
 		float: right;
 	}
+	.form li{
+		margin-bottom: 10px;
+	}
 	.form li .input{
 		width: 200px;
 		height: 25px;
 		line-height: 25px;
-		margin-bottom: 10px;
 		vertical-align: middle;
 	}
-	.form li textarea{
-		width: 320px;
+	.form li #textarea{
+		width: 300px;
 		height: 100px;
 		vertical-align: top;
 		overflow-y: hidden; 
 		outline: none;
 	}
-	.fl-input .textarea{
-		margin:5px 0 10px 0; 
-	}
-	.fl-input li .input-a{
-		width: 120px;
+	.fl-input li img{
+		width: 100px;
 		height: 30px;
-		line-height: 30px;
-		background: #ccc;
-		letter-spacing: 6px;
-		border:none;
-		text-align: center;
-		font-size:20px;
 		vertical-align: middle;
 		margin-right: 14%;
-		outline: none;
 	}
 	.fl-input li button{
 		width: 60px;

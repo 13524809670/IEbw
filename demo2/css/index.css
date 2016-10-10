@@ -7,23 +7,16 @@
 		float: left;
 	}
 	.content-fl img{
-		width:250px;
-		height:350px;
+		width:270px;
+		height:320px;
 	}
 	.content-fr{
-		width: 540px;
+		width: 500px;
 		float: right;
-		/*height: auto;*/
-		/*padding-bottom:100px;*/
 		}
 		.fr-con .content-fr p{
-			font-size: 16px;
+			font-size: 15px;
 			padding-top: 6px;
-			text-indent: 26px;
+			text-indent: 30px;
 			line-height: 26px;
-		}
-		.fr-con .content-fr p:first-child{
-			font-size: 23px;
-			padding:3px;
-			text-indent: 10px;
 		}

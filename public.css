@@ -75,6 +75,7 @@
 		border:none;
 		padding-left:5px;
 		font-size: 20px;
+		background: #fff;
 	}
 	.top-con button{
 		width: 60px;
@@ -145,10 +146,10 @@
 
 /*mainbody 头部导航 样式*/
 	.header-nav ul{
-	width: 1200px;
-	height: 45px;
-	line-height: 45px;
-	background: rgb(208,208,208);
+		width: 1200px;
+		height: 45px;
+		line-height: 45px;
+		background: rgb(242, 239, 239);
 	}
 	.header-nav li{
 		float: left;
@@ -180,12 +181,12 @@
 			height: 50px;
 			text-align: center;
 			line-height: 50px;
-			border-bottom: 1px solid #999;
+			border-bottom: 1px solid #ccc;
 			margin-bottom: 1px;
-			background: rgb(208,208,208);
+			background: rgb(242, 239, 239);
 		}
 		.fl-nav .icon-a:hover{
-			background: rgb(238, 219, 93);
+			background: rgb(198, 193, 193);
 		}
 		.fl-nav li:first-child{
 			background:rgb(6, 72, 118);
@@ -200,7 +201,7 @@
 			vertical-align: middle;
 		}
 		.fl-nav .last-child{
-			background: rgb(11, 200, 100);
+			background: rgb(198, 193, 193);
 		}
 		.fl-nav .icon-a,.fl-nav .last-child{
 			font-size: 21px;
@@ -246,19 +247,21 @@
 		.fr-con h2{
 			font-size: 25px;
 			font-weight: 500;
-			padding:6px 0 6px 0;
+			padding:6px 0 5px 0;
+			text-indent: 10px;
 		}
 		.fr-con .title .icon{
 			background-image: url(images/pic_19.png);
 			background-repeat: no-repeat;
-			width:800px;
-			height: 10px;
+			background-size: 100% 100%;
+			width:700px;
+			height: 5px;
 			float: left;
 			display: block;
 		}
 		.fr-con h3{
 			font-weight: 400;
-			font-size: 20px;
+			font-size: 22px;
 		}
 
 /*底部样式*/
