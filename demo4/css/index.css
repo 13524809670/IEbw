@@ -46,5 +46,28 @@
 		opacity: 0.6;
 		filter:alpha(opacity=60);
 	}
-
+	/*分页插件*/
+	nav{
+		width: 255px;
+		margin:0 auto;
+	}
+	nav li{
+		float: left;
+		border:1px dotted #999;
+		text-align: center;
+		line-height: 30px;
+		margin-right: 1px;
+	}
+	nav .active{background: #337ab7;}
+	nav li,nav li a{
+		width: 30px;
+		height: 30px;
+		color: #000;
+		display: block;
+	}
+	nav a:hover{
+		background:#337ab7;
+		color:#fff;
+	}
+	
 	

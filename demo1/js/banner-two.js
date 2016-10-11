@@ -27,17 +27,21 @@ ZoomPic.prototype =
 			{width:200, height:230, top:71, left:496, zIndex:1}
 		];
 		for (var i = 0; i < this.aLi.length; i++) this.aSort[i] = this.aLi[i];
+
 		this.aSort.unshift(this.aSort.pop());
+
 		this.setUp();
+
 		this.addEvent(this.prev, "click", this._doPrev);
+
 		this.addEvent(this.next, "click", this._doNext);
+
 		this.doImgClick();		
-		this.timer = setInterval(function ()
-		{
+		this.timer = setInterval(function (){
 			_this.doNext()	
-		}, 3000);		
-		this.wrap.onmouseover = function ()
-		{
+		}, 2000);		
+
+		this.wrap.onmouseover = function (){
 			clearInterval(_this.timer)	
 		};
 		this.wrap.onmouseout = function ()
@@ -45,7 +49,7 @@ ZoomPic.prototype =
 			_this.timer = setInterval(function ()
 			{
 				_this.doNext()	
-			}, 3000);	
+			}, 2000);	
 		}
 	},
 	doPrev : function ()
@@ -83,12 +87,14 @@ ZoomPic.prototype =
 		var _this = this;
 		var i = 0;
 		for (i = 0; i < this.aSort.length; i++) this.oUl.appendChild(this.aSort[i]);
+
 		for (i = 0; i < this.aSort.length; i++)
 		{
 			this.aSort[i].index = i;
 			if (i < 7)
 			{
 				this.css(this.aSort[i], "display", "block");
+
 				this.doMove(this.aSort[i], this.options[i], function ()
 				{
 					_this.doMove(_this.aSort[_this.iCenter].getElementsByTagName("img")[0], {opacity:100}, function ()
@@ -107,47 +113,53 @@ ZoomPic.prototype =
 					})
 				});
 			}
-			else
-			{
+			else{
 				this.css(this.aSort[i], "display", "none");
+
 				this.css(this.aSort[i], "width", 0);
+
 				this.css(this.aSort[i], "height", 0);
+
 				this.css(this.aSort[i], "top", 37);
+
 				this.css(this.aSort[i], "left", this.oUl.offsetWidth / 2)
 			}
-			if (i < this.iCenter || i > this.iCenter)
-			{
+			if (i < this.iCenter || i > this.iCenter){
+
 				this.css(this.aSort[i].getElementsByTagName("img")[0], "opacity", 30)
-				this.aSort[i].onmouseover = function ()
-				{
+
+				this.aSort[i].onmouseover = function (){
+
 					_this.doMove(this.getElementsByTagName("img")[0], {opacity:100})	
 				};
-				this.aSort[i].onmouseout = function ()
-				{
+				this.aSort[i].onmouseout = function (){
+
 					_this.doMove(this.getElementsByTagName("img")[0], {opacity:35})
 				};
 				this.aSort[i].onmouseout();
 			}
-			else
-			{
+			else{
 				this.aSort[i].onmouseover = this.aSort[i].onmouseout = null
 			}
 		}		
 	},
 	addEvent : function (oElement, sEventType, fnHandler)
 	{
-		return oElement.addEventListener ? oElement.addEventListener(sEventType, fnHandler, false) : oElement.attachEvent("on" + sEventType, fnHandler)
+		return oElement.addEventListener ? oElement.addEventListener(
+
+			sEventType, fnHandler, false) : oElement.attachEvent("on" +
+
+			 sEventType, fnHandler)
 	},
-	css : function (oElement, attr, value)
-	{
-		if (arguments.length == 2)
-		{
-			return oElement.currentStyle ? oElement.currentStyle[attr] : getComputedStyle(oElement, null)[attr]
+	css : function (oElement, attr, value){
+		if (arguments.length == 2){
+
+			return oElement.currentStyle ? oElement.currentStyle[attr] : 
+
+			getComputedStyle(oElement, null)[attr]
 		}
-		else if (arguments.length == 3)
-		{
-			switch (attr)
-			{
+		else if (arguments.length == 3){
+			switch (attr){
 				case "width":
 				case "height":
 				case "top":
@@ -165,35 +177,40 @@ ZoomPic.prototype =
 			}	
 		}
 	},
-	doMove : function (oElement, oAttr, fnCallBack)
-	{
+	doMove : function (oElement, oAttr, fnCallBack){
 		var _this = this;
+
 		clearInterval(oElement.timer);
-		oElement.timer = setInterval(function ()
-		{
+
+		oElement.timer = setInterval(function (){
+
 			var bStop = true;
-			for (var property in oAttr)
-			{
+
+			for (var property in oAttr){
+
 				var iCur = parseFloat(_this.css(oElement, property));
+
 				property == "opacity" && (iCur = parseInt(iCur.toFixed(2) * 100));
+
 				var iSpeed = (oAttr[property] - iCur) / 5;
+
 				iSpeed = iSpeed > 0 ? Math.ceil(iSpeed) : Math.floor(iSpeed);
 				
-				if (iCur != oAttr[property])
-				{
+				if (iCur != oAttr[property]){
+
 					bStop = false;
+
 					_this.css(oElement, property, iCur + iSpeed)
 				}
 			}
-			if (bStop)
-			{
+			if (bStop){
 				clearInterval(oElement.timer);
+
 				fnCallBack && fnCallBack.apply(_this, arguments)	
 			}
 		}, 30)
 	}
 };
-window.onload = function ()
-{
+window.onload = function (){
 	new ZoomPic("box");
 };

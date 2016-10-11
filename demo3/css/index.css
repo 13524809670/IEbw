@@ -33,54 +33,28 @@
 		vertical-align: text-top;
 		color: #999;
 	}
+	/*分页插件*/
+	nav{
+		width: 255px;
+		margin:0 auto;
+	}
+	nav li{
+		float: left;
+		border:1px dotted #999;
+		text-align: center;
+		line-height: 30px;
+		margin-right: 1px;
+	}
+	nav .active{background: #0089ff;}
+	nav li,nav li a{
+		width: 30px;
+		height: 30px;
+		color: #999;
+		display: block;
+	}
+	nav a:hover{
+		background:#0089ff;
+		color:#222;
+	}
+	
 
-
-
-/*分页插件css样式*/
-/*.tcdPageCode{
-	padding:0 0 0 30%;
-	text-align: left;
-	color:#428bca;
-	margin-bottom: 50px;
-	}
-	.tcdPageCode a{
-		display: inline-block;
-		height: 25px;
-		line-height: 25px;
-		color:#428bca;
-		border:1px solid #ddd;
-		border-radius: 4px;
-		vertical-align: middle;
-		padding:0 10px;
-		margin: 0 2px;
-	}
-	.tcdPageCode a:hover{
-		text-decoration: none;
-		border:1px solid #428bca;
-	}
-	.tcdPageCode span.current{
-		display: inline-block;
-		height: 25px;
-		line-height: 25px;
-		color: #fff;
-		background: #428bca;
-		border:1px solid #428bca;
-		vertical-align: middle;
-		border-radius: 4px;
-		padding: 0 10px;
-		margin:0 2px;
-	}
-	.tcdPageCode span.disadled{
-		display: inline-block;
-		height: 25px;
-		line-height: 25px;
-		padding: 0 10px;
-		margin:0 2px;
-		color:#fff;
-		background: #bfbfbf;
-		border:1px solid #bfbfbf;
-		border-radius: 4px;
-		vertical-align: middle;
-	}
-
-*/

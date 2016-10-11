@@ -4,23 +4,10 @@
 	<meta charset="UTF-8">
 	<title>新闻中心</title>
 	<link rel="stylesheet" href="css/index.css" />
-	<link rel="stylesheet" href="css/page.css" />
 	<link rel="stylesheet" href="../public.css" />
-
-	<!-- 分页插件外部样式 -->
-	<script src="../js/page.min.js"></script>
-	<script src="../js/page.js"></script>
+	<!-- <link rel="stylesheet" type="text/css" href="../bootstrap.min.css"> -->
 	<style type="text/css">
-		/*分页样式*/
-		.pageTest{ 
-			width: 400px; 
-			height: 38px;
-			margin: 0 auto;
-		}
-	    .activP{
-	      background-color: #367fa9!important;
-	      color: #fff!important;
-	    }
+		.clear1{padding-bottom: 30px;}
 	</style>
 </head>
 <body>
@@ -150,7 +137,17 @@
 								<td class="text-top">2016-10-01</td>
 							</tr>
 						</table>
-						<div class="pageTest"></div>
+						<nav>
+						  <ul class="pagination">
+						  	<li><a href="#">&laquo;</a></li>
+						    <li class="active"><a href="#">1 <span class="sr-only"></span></a></li>
+						    <li><a href="#">2</a></li>
+						    <li><a href="#">3</a></li>
+						    <li><a href="#">4</a></li>
+						    <li><a href="#">5</a></li>
+						    <li><a href="#">&raquo;</a></li>
+						  </ul>
+						</nav>
 						<div class="clear clear1"></div>
 					</div>
 				</div> 
